@@ -1,4 +1,6 @@
 import * as Events from '../models/Events.js';
+import fs from 'fs';
+import path from 'path';
 
 
 // Controller function for creating an event
@@ -110,10 +112,22 @@ export async function deleteEvent(req, res) {
     await Events.deleteUserEvent(id);
     // Delete the specified image from ./public/images folder as well
     if (event.image) {
-      const imagePath = `./public/images/${event.image}`;
-      fs.unlinkSync(imagePath);
+      const imagePath = path.join('./public/images', event.image);
+      try {
+        fs.unlinkSync(imagePath);
+        // Log the deleted image path
+        console.log(`Deleted image: ${imagePath}`);
+      } catch (fileError) {
+        // Log file deletion error but don't fail the event deletion
+        console.error(`Failed to delete image file: ${imagePath}`, fileError.message);
+        // Return 500 status if file deletion fails
+        return res.status(500).json({
+          message: 'Event deleted successfully, but failed to delete associated image file.',
+          error: process.env.NODE_ENV === 'development' ? fileError.message : undefined
+        });
+      }
     }
-    // Return no content
+    // Return no content if everything succeeded
     res.status(204).send();
   } catch (error) {
     if (error.message.includes('not found')) {

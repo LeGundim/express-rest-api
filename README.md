@@ -68,21 +68,85 @@ The application is written in JavaScript and does not require a build step. All 
 
 However, ensure the database is initialized by running the server, which automatically creates the necessary tables.
 
-## 🚀 Running the Server
+## 🔧 Environment Configuration
 
-1. Set up environment variables:
-   Create a `.env` file in the root directory with the following:
+The application uses environment variables for configuration management. These variables are loaded from a `.env` file in the root directory using the `dotenv` package.
+
+### Setting up the .env file
+
+1. Create a `.env` file in the root directory of the project:
+   ```bash
+   touch .env
    ```
+
+2. Add the following environment variables to your `.env` file:
+
+   ```env
+   # Server Configuration
+   HOST=localhost
    PORT=3000
-   JWT_SECRET=your_secret_key_here
+
+   # Environment
+   NODE_ENV=development
+
+   # JWT Secret (REQUIRED - Generate using methods below)
+   JWT_SECRET=your_generated_secret_here
    ```
 
-2. Start the server:
+### Environment Variables Reference
+
+| Variable | Description | Default | Required |
+|----------|-------------|---------|----------|
+| `HOST` | Host where the application will run | `localhost` | No |
+| `PORT` | Port where the application will run | `3000` | No |
+| `NODE_ENV` | Application environment (`development` or `production`) | `development` | No |
+| `JWT_SECRET` | Secret key for JWT token signing and verification | None | **Yes** |
+
+### Generating a Secure JWT Secret
+
+The `JWT_SECRET` must be a cryptographically strong random string. Here are several secure methods to generate it:
+
+#### Method 1: Using Node.js Crypto (Recommended)
+```bash
+node -e "console.log(require('crypto').randomBytes(64).toString('hex'))"
+```
+
+#### Method 2: Using OpenSSL
+```bash
+openssl rand -hex 64
+```
+
+#### Method 3: Using /dev/urandom (Linux/macOS)
+```bash
+head -c 64 /dev/urandom | xxd -p -c 64
+```
+
+#### Method 4: Online Generator (Development Only)
+For development purposes, you can use an online secret generator, but **never use this method for production** as it compromises security.
+
+**Example generated secret:**
+```
+JWT_SECRET="0ab863ab944fb0e431fc0ccc73c683a40373b966c27323b761f60c4be379602e8aec4f0848de851a651da9797fd9ef6cfc32fccaf1fbd69c53ed93d6e5d89d8c"
+```
+
+### Security Best Practices
+
+1. **Never commit .env files** - The `.env` file should be added to `.gitignore`
+2. **Use strong secrets** - Generate JWT secrets with at least 256 bits (32 bytes) of entropy
+3. **Rotate secrets regularly** - Change JWT secrets periodically in production
+4. **Use different secrets per environment** - Development and production should have different secrets
+5. **Restrict file permissions** - Set `.env` file permissions to `600` (owner read/write only)
+
+### Running the Server
+
+1. After setting up your `.env` file with all required variables, start the server:
    ```bash
    npm run dev
    ```
 
-   The server will start on the specified port (default: 3000) and initialize the database automatically.
+2. The server will start on the specified port and initialize the database automatically.
+
+   The application will log the port it's running on (e.g., "Server is running on port 3000").
 
 ## 📚 API Endpoints
 
