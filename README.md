@@ -2,6 +2,24 @@
 
 A robust RESTful API for managing events, built with Node.js and Express.js. This backend provides endpoints for user authentication, event creation, management, and user registrations for events.
 
+## 🔧 Development Setup
+
+### Node.js Version Management with mise
+
+This project includes a [.mise.toml](.mise.toml) configuration file for [mise](https://mise.jdx.dev/), a powerful runtime manager. To get started:
+
+1. Install `mise` if you haven't already:
+   ```bash
+   curl -fsSL https://mise.jdx.dev/install.sh | sh
+   ```
+
+2. Install the correct Node.js version and set up your environment:
+   ```bash
+   mise install
+   ```
+
+3. The correct Node.js version will be used automatically when you're in the project directory.
+
 ## 🚀 Features
 
 - **User Authentication**: Secure signup and login with JWT tokens
@@ -37,13 +55,22 @@ The `package.json` file is the heart of any Node.js project. It contains metadat
   - `dotenv`: Environment variable management
 - **Scripts**: Defines npm scripts for common tasks, e.g., `"dev"`: `"node --watch app.js"` to start the development server with auto-reload on file changes.
 
-Note: This file is gitignored in the repository, so it won't be included in version control. To recreate it, run `npm init` and install the dependencies listed above.
+## 📝 License
+
+This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for details.
+
+## Author
+
+👤 **Shubhojit Dasgupta**
+
+- GitHub: [@Brisinger](https://github.com/Brisinger)
+- Project Link: [https://github.com/Brisinger/express-rest-api](https://github.com/Brisinger/express-rest-api)
 
 ## 📦 Managing Dependencies
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Brisinger/express-rest-api.git
    cd express-rest-api
    ```
 
@@ -61,6 +88,7 @@ Note: This file is gitignored in the repository, so it won't be included in vers
    - express-validator
    - cors
    - dotenv
+
 
 ## 🏗️ Building the App
 
@@ -173,6 +201,3 @@ JWT_SECRET="0ab863ab944fb0e431fc0ccc73c683a40373b966c27323b761f60c4be379602e8aec
 - Database file: `database.db`
 - Uploaded images: `public/images/`
 
-## 📝 License
-
-This project is licensed under the Apache 2.0 License.
